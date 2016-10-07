@@ -4,8 +4,13 @@ Personal Assistant in Python
 Tested on Debian Jessie
 
 ### Requires
-- mpg321
+```
+pip install gTTS
+```
+
+```
+apt-get install mpg321
+```
 
 ### Version
-0.5a
-
+0.7.3 beta
