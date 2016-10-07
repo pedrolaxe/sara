@@ -1,16 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Name: SARA
-# Version: 0.7.2b
+# Version: 0.7.3b
 # Author: Pedro Laxe
 # Date: 06/10/2016
-from time import ctime
+
 import time
 import os
 import sys
 from gtts import gTTS
 
-version = "0.7.2 beta"
+version = "0.7.3 beta"
 
 def falar(audiostd):
     print audiostd
@@ -43,15 +43,14 @@ def sara(data):
 
     if "versao" in data or "version" in data:
           falar("Estou na versão "+version)
-    if "sair" in data:
+    if "sair" in data or "close" in data:
         falar("Até a Próxima meu senhor!")
         os.system("rm -rf tmpsara.mp3")
         sys.exit()
 
-
-# inicializa a sara
+# inicializa a SARA
 time.sleep(2)
-falar("Olá Pedro, como você está?")
+falar("Olá, como você está?")
 while 1:
     data = str(raw_input("Digite: "))
     sara(data)
