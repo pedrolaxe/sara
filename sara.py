@@ -36,10 +36,11 @@ def sara(data):
         falar("Gosto de Aprender coisas novas!")
         pergunta = str(raw_input("Pergunta: "))
         resposta = str(raw_input("Resposta: "))
-        dicfile.update({pergunta: resposta})
-        savedbfile(dicfile)
-        falar("Salvei no meu banco de dados!")
-        falar("Reinicie para ver as mudanças.")
+        if pergunta != "" and resposta != "":
+            dicfile.update({pergunta: resposta})
+            savedbfile(dicfile)
+            falar("Salvei no meu banco de dados!")
+            falar("Reinicie para ver as mudanças.")
 
     if "versao" in data or "version" in data:
           falar("Estou na versão "+version)
