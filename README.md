@@ -1,5 +1,11 @@
 # SARA
 Personal Assistant in Python
 
-version 0.4a
+Tested on Debian Jessie
+
+### Requires
+- mpg321
+
+### Version
+0.5a
 

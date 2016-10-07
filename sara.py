@@ -28,8 +28,6 @@ def sara(data):
     "bem": "fico feliz por estar bem!",
 
     "sara": "Em que posso lhe servir meu senhor?",
-
-    "piada": "O que é um Fúio?    é um buiáco na parede kkk"
     }
     for x in dic:
         if x in data:
@@ -39,6 +37,7 @@ def sara(data):
           falar("Estou na versão "+version)
     if "sair" in data:
         falar("Até a Próxima meu senhor!")
+        os.system("rm -rf tmpsara.mp3")
         sys.exit()
 
 
