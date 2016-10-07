@@ -3,7 +3,7 @@ Personal Assistant in Python
 
 Tested on Debian Jessie
 
-### Requires
+### Requirements
 ```
 pip install gTTS
 ```
