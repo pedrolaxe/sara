@@ -1,7 +1,7 @@
 # SARA
 Personal Assistant in Python
 
-Tested on Debian Jessie
+Tested on Debian Jessie and Mac OS Mojave
 
 ### Requirements
 ```
